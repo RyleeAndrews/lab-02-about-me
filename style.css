@@ -1,24 +1,14 @@
 h1, h2 {
-
   font-family: sans-serif;
   border-style: dotted;
   border-width: thin;
   position: relative;
   color:yellow;
-
-
-
+  background-color: green;
 }
 p {
   color:blue;
 }
 li {
-  color:white;
-
-}
-li.
-body {
-  background-color: green;
-  border-style: groove;
-
+  color:purple;
 }

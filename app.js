@@ -86,7 +86,7 @@ var notYetDone = true;
 var game;
 console.log('Or have I only been in the US?', rightAnswers);
 for(var run = 6; run > 0 && notYetDone; run--){
-  game = prompt('What countries have I visited?');
+  game = prompt('Can you name a country I have visited?');
   if(game == rightAnswers[0]){
     alert('You got the right answers!');
     notYetDone = false;
