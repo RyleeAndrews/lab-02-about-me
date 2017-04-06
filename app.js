@@ -47,10 +47,10 @@ if(favoriteLanguage == null){
 }
 else if(favoriteLanguage.toUpperCase() == 'NO'){
   alert('Right but it\'s still fun');
+  counter++;
 }
 else{
   alert('No javascript is.');
-  counter++;
   }
 }
 function checkAnswer5() {
@@ -109,6 +109,11 @@ for(var run = 6; run > 0 && notYetDone; run--){
     }
   }
 }
+function correct () {
+  var name = prompt('what is your name?');
+  alert(name + ' you got ' + counter + ' correct!');
+}
+
 checkAnswer1();
 checkAnswer2();
 checkAnswer3();
@@ -116,3 +121,4 @@ checkAnswer4();
 checkAnswer5();
 checkAnswer6();
 checkAnswer7();
+correct();
