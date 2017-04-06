@@ -1,10 +1,8 @@
 'use strict';
 var counter = 0;
-console.log('The Guessing Game');
 
-
+function checkAnswer1() {
 var firstCode = prompt('Did I enjoy my first coding session?');
-console.log('Did I do it well though?', firstCode);
 if(firstCode == null){
   alert('please enter something');
 }
@@ -14,9 +12,10 @@ else if(firstCode.toLowerCase() == 'yes'){
 }
 else{
   alert('Nope fell in love right away.');
+  }
 }
+function checkAnswer2() {
 var bucky = prompt('Did I first learn online with Bucky?');
-console.log('Was Bucky the instructor?', bucky);
 if(bucky == null){
   alert('please enter something');
 }
@@ -26,9 +25,10 @@ if(bucky == null){
 }
 else{
   alert('You\'re wrong where else would I go to learn the basics.');
+  }
 }
+function checkAnswer3() {
 var sam = prompt('Did Sam convince me to get into coding?');
-console.log('Did he fully convince me though?', sam);
 if(sam == null){
   alert('please enter something');
 }
@@ -38,9 +38,10 @@ else if(sam.toLowerCase() == 'yes'){
 }
 else{
   alert('Wrong, he did and am so happy he did.');
+  }
 }
+function checkAnswer4() {
 var favoriteLanguage = prompt('Is css my favorite language?');
-console.log('Or is it javascript?', favoriteLanguage);
 if(favoriteLanguage == null){
   alert('please enter something');
 }
@@ -50,9 +51,10 @@ else if(favoriteLanguage.toUpperCase() == 'NO'){
 else{
   alert('No javascript is.');
   counter++;
+  }
 }
+function checkAnswer5() {
 var favoriteSushi = prompt ('Is the spider roll my favorite roll of sushi?');
-console.log('Or is it spicy tuna?', favoriteSushi);
 if(favoriteSushi == null){
   alert('please enter something');
 }
@@ -62,11 +64,12 @@ else if(favoriteSushi.toLowerCase() == 'yes'){
 }
 else{
   alert('No but spicy tuna is also one of my go to\'s.');
+  }
 }
+function checkAnswer6() {
 var correctAnswer = 'Thailand';
 var notFinished = true;
 var guess;
-console.log('Or do I only want to visit North Korea?', correctAnswer);
 for(var test = 4; test > 0 && notFinished; test--){
   guess = prompt('Where do I want to visit the most?');
   if(guess == correctAnswer ){
@@ -79,12 +82,13 @@ for(var test = 4; test > 0 && notFinished; test--){
   }
   else{
     alert('Guess again!');
+    }
   }
 }
+function checkAnswer7() {
 var rightAnswers = ['Canada', 'Bahamas'];
 var notYetDone = true;
 var game;
-console.log('Or have I only been in the US?', rightAnswers);
 for(var run = 6; run > 0 && notYetDone; run--){
   game = prompt('Can you name a country I have visited?');
   if(game == rightAnswers[0]){
@@ -102,10 +106,13 @@ for(var run = 6; run > 0 && notYetDone; run--){
   }
   else{
     alert('Try again!');
+    }
   }
 }
-var name = prompt('What is your name?');
-console.log(name);
-
-var message = (name + ' you got ' + counter + ' right! Try Again!');
-alert(message);
+checkAnswer1();
+checkAnswer2();
+checkAnswer3();
+checkAnswer4();
+checkAnswer5();
+checkAnswer6();
+checkAnswer7();
