@@ -1,7 +1,7 @@
 'use strict';
 
 console.log('The Guessing Game');
-
+count++;
 
 var firstCode = prompt('Did I enjoy my first coding session?');
 console.log('Did I do it well though?', firstCode);
@@ -10,6 +10,7 @@ if(firstCode == null){
 }
 else if(firstCode.toLowerCase() == 'yes'){
   alert('Yup loved it!');
+  count++;
 }
 else{
   alert('Nope fell in love right away.');
@@ -21,6 +22,7 @@ if(bucky == null){
 }
  else if(bucky.toUpperCase() == 'YES') {
   alert('Great teacher!');
+  count++;
 }
 else{
   alert('You\'re wrong where else would I go to learn the basics.');
@@ -32,6 +34,7 @@ if(sam == null){
 }
 else if(sam.toLowerCase() == 'yes'){
   alert('Thank god for that.');
+  count++;
 }
 else{
   alert('Wrong, he did and am so happy he did.');
@@ -43,6 +46,7 @@ if(favoriteLanguage == null){
 }
 else if(favoriteLanguage.toUpperCase() == 'NO'){
   alert('Right but it\'s still fun');
+  count++;
 }
 else{
   alert('No javascript is.');
@@ -54,8 +58,9 @@ if(favoriteSushi == null){
 }
 else if(favoriteSushi.toLowerCase() == 'yes'){
   alert('It\'s so bomb!');
+  count++;
 }
 else{
   alert('No but spicy tuna is also one of my go to\'s.');
 }
- 
+var 
