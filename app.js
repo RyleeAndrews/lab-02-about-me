@@ -1,5 +1,5 @@
 'use strict';
-
+var counter = 0;
 console.log('The Guessing Game');
 
 
@@ -10,6 +10,7 @@ if(firstCode == null){
 }
 else if(firstCode.toLowerCase() == 'yes'){
   alert('Yup loved it!');
+  counter++;
 }
 else{
   alert('Nope fell in love right away.');
@@ -21,6 +22,7 @@ if(bucky == null){
 }
  else if(bucky.toUpperCase() == 'YES') {
   alert('Great teacher!');
+  counter++;
 }
 else{
   alert('You\'re wrong where else would I go to learn the basics.');
@@ -32,6 +34,7 @@ if(sam == null){
 }
 else if(sam.toLowerCase() == 'yes'){
   alert('Thank god for that.');
+  counter++;
 }
 else{
   alert('Wrong, he did and am so happy he did.');
@@ -46,6 +49,7 @@ else if(favoriteLanguage.toUpperCase() == 'NO'){
 }
 else{
   alert('No javascript is.');
+  counter++;
 }
 var favoriteSushi = prompt ('Is the spider roll my favorite roll of sushi?');
 console.log('Or is it spicy tuna?', favoriteSushi);
@@ -54,8 +58,54 @@ if(favoriteSushi == null){
 }
 else if(favoriteSushi.toLowerCase() == 'yes'){
   alert('It\'s so bomb!');
+  counter++;
 }
 else{
   alert('No but spicy tuna is also one of my go to\'s.');
 }
- 
+var correctAnswer = 'Thailand';
+var notFinished = true;
+var guess;
+console.log('Or do I only want to visit North Korea?', correctAnswer);
+for(var test = 4; test > 0 && notFinished; test--){
+  guess = prompt('Where do I want to visit the most?');
+  if(guess == correctAnswer ){
+    alert('You got the right answer!');
+    notFinished = false;
+    counter++;
+  }
+  else if(test === 1){
+    alert('You\'re out of guesses!');
+  }
+  else{
+    alert('Guess again!');
+  }
+}
+var rightAnswers = ['Canada', 'Bahamas'];
+var notYetDone = true;
+var game;
+console.log('Or have I only been in the US?', rightAnswers);
+for(var run = 6; run > 0 && notYetDone; run--){
+  game = prompt('What countries have I visited?');
+  if(game == rightAnswers[0]){
+    alert('You got the right answers!');
+    notYetDone = false;
+    counter++;
+  }
+  else if(game == rightAnswers[1]){
+    alert('You got the right answer!');
+    notYetDone = false;
+    counter++;
+  }
+  else if(run === 1){
+    alert('You\'re out of tries!');
+  }
+  else{
+    alert('Try again!');
+  }
+}
+var name = prompt('What is your name?');
+console.log(name);
+
+var message = (name + ' you got ' + counter + ' right!');
+alert(message);
