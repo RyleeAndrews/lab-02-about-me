@@ -148,4 +148,4 @@ if (travelToSpace === correctValue || travelToSpace === correctValue[0]){
 }
 }
 yesorNOQuestion('do i like to code?', "yes", "i like to code")
-yesorNOQuestion('do i like to run?', 'yes', 'i like to ski');
+yesorNOQuestion('do i like to ski?', 'yes', 'i like to ski');
