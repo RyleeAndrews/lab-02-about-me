@@ -1,6 +1,7 @@
+body
 h1, h2 {
   font-family: sans-serif;
-  border-style: solid;
+  border-style: dotted;
   border-width: thin;
   position: relative;
   color:yellow;

@@ -106,6 +106,5 @@ for(var run = 6; run > 0 && notYetDone; run--){
 }
 var name = prompt('What is your name?');
 console.log(name);
-
 var message = (name + ' you got ' + counter + ' right! Try Again!');
 alert(message);
