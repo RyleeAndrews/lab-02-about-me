@@ -1,6 +1,6 @@
 'use strict';
 var counter = 0;
-
+console.log('The Guessing Game');
 function checkAnswer1() {
 var firstCode = prompt('Did I enjoy my first coding session?');
 if(firstCode == null){
@@ -84,7 +84,7 @@ for(var test = 4; test > 0 && notFinished; test--){
     alert('Guess again!');
     }
   }
-}
+
 function checkAnswer7() {
 var rightAnswers = ['Canada', 'Bahamas'];
 var notYetDone = true;
@@ -111,7 +111,7 @@ for(var run = 6; run > 0 && notYetDone; run--){
 }
 function correct () {
   var name = prompt('What is your name?');
-  alert(name + ' you got ' + counter + ' correct!');
+  alert(name + ' you got ' + counter + ' correct! Good job!');
 }
 
 checkAnswer1();
