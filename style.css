@@ -3,15 +3,8 @@ h1, h2 {
   border-style: dotted;
   border-width: thin;
   position: relative;
-<<<<<<< HEAD
-  color:white;
-
-
-
-=======
   color:yellow;
   background-color: green;
->>>>>>> 6fa3d4b434c3a43f48e3cbeeb8b8aa7cb6d18465
 }
 p {
   color:blue;
