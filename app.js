@@ -109,12 +109,6 @@ for(var run = 6; run > 0 && notYetDone; run--){
     }
   }
 }
-<<<<<<< HEAD
-var name = prompt('What is your name?');
-console.log(name);
-var message = (name + ' you got ' + counter + ' right! Try Again!');
-alert(message);
-=======
 function correct () {
   var name = prompt('what is your name?');
   alert(name + ' you got ' + counter + ' correct!');
@@ -128,4 +122,3 @@ checkAnswer5();
 checkAnswer6();
 checkAnswer7();
 correct();
->>>>>>> 838566ec8624b27cc0d5a2889cff83f034db9ef4
