@@ -111,11 +111,7 @@ for(var run = 6; run > 0 && notYetDone; run--){
 }
 function correct () {
   var name = prompt('What is your name?');
-<<<<<<< HEAD
-  alert(name + ' you got ' + counter + ' correct! Good job!');
-=======
   alert(name + ' you got ' + counter + ' correct!');
->>>>>>> master
 }
 
 checkAnswer1();
